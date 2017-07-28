@@ -4,7 +4,7 @@
   "description": "A dependency finder",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha ./tests/*spec.js"
   },
   "author": "Andrew Syriala",
   "license": "ISC",
