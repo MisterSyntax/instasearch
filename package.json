@@ -1,0 +1,11 @@
+{
+  "name": "dependencyfinder",
+  "version": "1.0.0",
+  "description": "A dependency finder",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Andrew Syriala",
+  "license": "ISC"
+}
