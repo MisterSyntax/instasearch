@@ -7,5 +7,9 @@
     "test": "test"
   },
   "author": "Andrew Syriala",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^3.4.2"
+  }
 }
