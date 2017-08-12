@@ -1,7 +1,7 @@
 import enableInfo from './enableInfo';
 /**
- * @description:
- * @var: {object} An object that has a key data which contains the data for the last
+ * @description: Takes an object which contains the data of the suggestions and displays them
+ * @var: {object} resultData - An object that has a key data which contains the data for the last
  */
 const displayResults = function(resultData){
     const suggestionBox = document.getElementById('search-suggestions');

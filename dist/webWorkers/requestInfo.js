@@ -16,9 +16,10 @@ onmessage = function (e) {
         if (results.Response === 'True') {
             let htmlOutput = `
                 <div class="title-info">
-                    <div class="info-title">${results.Title}</div>
-                    <div class="info-year-director"><span class="year">(${results.Year})</span> <span class="director">${results.Director}</span></div>
-                    <div class="info-ratings">
+                    <div class="close-info">X</div>
+                    <div class="title">${results.Title}</div>
+                    <div class="year-director"><span class="year">(${results.Year})</span> <span class="director">${results.Director}</span></div>
+                    <div class="-ratings">
                         <h4>Ratings:</h4>${
                             results.Ratings.length ?
                                 results.Ratings.map(curr=>`<div>${curr.Source}: ${curr.Value}</div>`).join('')

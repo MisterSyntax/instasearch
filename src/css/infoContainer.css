@@ -10,10 +10,6 @@
     font-weight: 500;
 }
 
-.info-year-director{
-    text-align: center;
-}
-
 .title-info{
     height: 320px;
     width: 220px;
@@ -23,13 +19,33 @@
     margin: 20px auto;
     padding: 1em;
     text-align: left;
+    & .title{
+        font-weight: bold;
+        text-align: center;
+    }   
+
+    & .year-director{
+        text-align: center;
+    }
 }
 
 
-.info-title{
-    font-weight: bold;
+
+
+.close-info{
+    background: white;
+    width: 20px;
+    height: 20px;
+    margin: auto;
     text-align: center;
+    vertical-align: middle;
+    border-radius: 15px;
+    border: 2px solid black;
+    position: absolute;
+    top: 35px;
+    right: 15px;
 }
+
 
 
 .open{
