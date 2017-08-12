@@ -1,5 +1,5 @@
 @import '/infoContainer.css';
-@import './searchSuggestions.css';
+@import './searchResults.css';
 @import './searchBox.css';
 @import './colors.css';
 body{
@@ -8,6 +8,8 @@ body{
     margin: 0;
     background-color: var(--almost-white);
     font-family: 'Raleway', sans-serif;
+    user-select: none;
+    -webkit-tap-highlight-color: none;
 }
 
 header{
