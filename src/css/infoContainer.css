@@ -9,19 +9,21 @@
 
 .title-info-container{
     position: absolute;
-    height: 450px;
+    height: 370px;
     width: 280px;
     top: 0;
     z-index: 2;
 }
 
 .title-info{
-    height: 350px;
-    width: 250px;
+    height: 320px;
+    width: 220px;
     background-color: var(--grey-blue);
-    border: 3px solid var(--dark-grey);
+    border: 3px solid var(--primary);
     border-radius: 20px;
     margin: 20px auto;
+    padding: 1em;
+    text-align: left;
 }
 
 .left{

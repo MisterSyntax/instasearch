@@ -13,13 +13,13 @@
 .result-container{
     position: relative;
     padding: .5em;
-    background-color: #D0D0D0;
+    background-color: var(--light-grey-blue);
     margin: .5em;
     border-radius: 3px;
     text-align: center;
     &:hover{
         cursor:pointer;
-        outline: 2px solid black; 
+        box-shadow: 0 0 3pt var(--secondary);
     }
     @media (--large-viewport) {
         width: 200px;
