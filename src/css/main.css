@@ -1,5 +1,5 @@
-@import './css/infoContainer.css';
-@import './css/searchSuggestions.css';
+@import '/infoContainer.css';
+@import './searchSuggestions.css';
 body{
     color: #333;
     font-weight: 700;
@@ -15,7 +15,6 @@ header{
 }
 main{
     width: 100%;
-    font-size:100px;
 }
 
 

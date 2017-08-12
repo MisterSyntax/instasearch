@@ -149,7 +149,7 @@ module.exports = __webpack_require__(2);
 /* 2 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Failed to find './css/infoContainer.css'\n    in [ \n        C:\\Users\\Can I Have Some Shoe\\Desktop\\NetFlix\\instant-search\\src\\css\n    ]\n    at C:\\Users\\Can I Have Some Shoe\\Desktop\\NetFlix\\instant-search\\node_modules\\postcss-import\\lib\\resolve-id.js:48:11\n    at runLoaders (C:\\Users\\Can I Have Some Shoe\\Desktop\\NetFlix\\instant-search\\node_modules\\webpack\\lib\\NormalModule.js:194:19)\n    at C:\\Users\\Can I Have Some Shoe\\Desktop\\NetFlix\\instant-search\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\Users\\Can I Have Some Shoe\\Desktop\\NetFlix\\instant-search\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\Users\\Can I Have Some Shoe\\Desktop\\NetFlix\\instant-search\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (C:\\Users\\Can I Have Some Shoe\\Desktop\\NetFlix\\instant-search\\node_modules\\postcss-loader\\lib\\index.js:176:71)");
 
 /***/ })
 /******/ ]);

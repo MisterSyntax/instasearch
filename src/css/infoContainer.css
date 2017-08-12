@@ -8,6 +8,7 @@
 
 .title-info-container{
     position: absolute;
+    right: 105%;
     height: 400px;
     width: 300px;
     top: 0;
