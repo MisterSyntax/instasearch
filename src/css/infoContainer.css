@@ -8,11 +8,17 @@
 
 .title-info-container{
     position: absolute;
-    right: 105%;
     height: 400px;
     width: 300px;
     top: 0;
-    left: 0;
     z-index: 2;
     background-color: aliceblue;
+}
+
+.left{
+    right:100%;
+}
+.right{
+    left:100%;
+    
 }
