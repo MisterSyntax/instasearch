@@ -34,22 +34,6 @@
     }
 }
 
-.close-info{
-    display: none;
-
-}
-
-.center 
-
-
-.close-x {
-    stroke: black;
-    fill: transparent;
-    stroke-linecap: round;
-    stroke-width: 5;
-}
-
-
 .open{
     display: block;
 }
@@ -64,6 +48,36 @@
 .right{
     left:100%;
 }
+
+/**the close option will only exist for mobile**/
+
+.close-info{
+
+    display: block;
+    background: white;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 15px;
+    border: 2px solid black;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    &:hover{
+        background-color:var(--primary);
+    }
+
+}
+.close-x {
+    stroke: black;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-width: 5;
+}
+
+
 .center{
     position: fixed;
     width: 100vw;

@@ -27,7 +27,8 @@ const createInfo = function (data, imdbID, parent) {
     closeButton.addEventListener('click', function () {
         const titleInfoContainer = parent.querySelector('.title-info-container');
         titleInfoContainer.setAttribute('class', 'title-info-container closed');
-    })
+        
+    });
 }
 
 export default createInfo;

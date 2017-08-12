@@ -19,8 +19,7 @@ onmessage = function (e) {
                 let program = `<div class='title-container' id='${result.imdbID}'>
                     ${result.Poster !== 'N/A' ? `<img class='poster' src='${result.Poster}' alt='${result.Title} Poster'>` : `<div class='no-poster'>No poster available</div>`}
                     <p class='title'>${result.Title}</p>
-                </div>
-                <div class='overlay-bg'></div>`
+                </div>`
 
                 return program;
             });

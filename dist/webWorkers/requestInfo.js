@@ -30,7 +30,7 @@ onmessage = function (e) {
                                 : 'No Ratings Yet'
                         }
                     </div>
-                </div`;
+                </div>`;
             postMessage(htmlOutput);
         };
     }

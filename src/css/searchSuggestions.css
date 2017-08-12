@@ -42,7 +42,6 @@
 .poster{
     @media (--small-viewport) {
         max-width: 90%; 
-
     }
     @media (--medium-viewport) {
         max-width: 90%;
@@ -66,5 +65,5 @@
     }
     background-color: white;
     text-align: center; 
-    min-height: 160px;
+    min-height: 285px;
 }

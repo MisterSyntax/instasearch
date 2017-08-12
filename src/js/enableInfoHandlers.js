@@ -11,17 +11,17 @@ const enableInfoHandlers = function (node) {
 
     const imdbID = node.querySelector('.title-container').id;
 
-    node.addEventListener('mouseenter', function () {
+    function createOpenInfoBox() {
         const titleInfoContainer = node.querySelector('.title-info-container');
 
         //if we have already created the title info container show it, otherwise create it
         if (titleInfoContainer) {
             //make sure not placing info box off screen
             const className = (window.innerWidth < 639) ?
-            'title-info-container open center'
-            : (window.innerWidth - node.offsetLeft > 600) ?
-                'title-info-container open right'
-                : 'title-info-container open left';
+                'title-info-container open center'
+                : (window.innerWidth - node.offsetLeft > 600) ?
+                    'title-info-container open right'
+                    : 'title-info-container open left';
             titleInfoContainer.setAttribute('class', className);
         }
         else {
@@ -32,6 +32,12 @@ const enableInfoHandlers = function (node) {
             }
 
         }
+    }
+
+    node.addEventListener('mouseenter', createOpenInfoBox);
+    node.addEventListener('click', function(each){
+        e.stopPropogation();
+        createOpenInfoBox();
     });
     //Closes the container on mouseleave
     node.addEventListener('mouseleave', function () {
