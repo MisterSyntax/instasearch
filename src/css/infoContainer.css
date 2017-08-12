@@ -1,3 +1,4 @@
+@import './colors.css';
 .open{
     display: block;
 }
@@ -8,11 +9,19 @@
 
 .title-info-container{
     position: absolute;
-    height: 400px;
-    width: 300px;
+    height: 450px;
+    width: 280px;
     top: 0;
     z-index: 2;
-    background-color: aliceblue;
+}
+
+.title-info{
+    height: 350px;
+    width: 250px;
+    background-color: var(--grey-blue);
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 20px auto;
 }
 
 .left{

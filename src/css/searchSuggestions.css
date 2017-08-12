@@ -9,13 +9,6 @@
     align-content: center;
 }
 
-#search-term{
-    font-size: 20px;
-    border-radius: 5px;
-    border: 0px;
-    padding: .5em;
-    min-width: 300px;
-}
 
 .result-container{
     position: relative;
@@ -24,6 +17,10 @@
     margin: .5em;
     border-radius: 3px;
     text-align: center;
+    &:hover{
+        cursor:pointer;
+        outline: 2px solid black; 
+    }
     @media (--large-viewport) {
         width: 200px;
     }
@@ -34,14 +31,21 @@
 .poster{
     @media (--large-viewport) {
         width: 180px;
+        height: 285px;
+    }
+    @media (--xlarge-viewport){
+        width: 220px;
+        height: 315px;
+    }
+}
+.no-poster{
+    @media (--large-viewport) {
+        width: 180px;
     }
     @media (--xlarge-viewport){
         width:220px;
     }
-}
-.no-poster{
-    width: 300px;
-    height: 400px;
     background-color: white;
     text-align: center; 
+    min-height: 160px;
 }

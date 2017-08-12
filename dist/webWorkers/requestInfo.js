@@ -15,16 +15,18 @@ onmessage = function (e) {
         const results = JSON.parse(xmlHttp.responseText);
         if (results.Response === 'True') {
             let htmlOutput = `
-                <div class="info-title">${results.Title}</div>
-                <div class="info-year">${results.Year} </div>
-                <div class="info-director">${results.Director}</div>
-                <div class="info-ratings">
-                    Ratings:${
-                        results.Ratings.length ?
-                            results.Ratings.map(curr=>`<div>${curr.Source}: ${curr.Value}</div>`).join('')
-                            : 'No Ratings Yet'
-                    }
-                </div>`
+                <div class="title-info">
+                    <div class="info-title">${results.Title}</div>
+                    <div class="info-year">${results.Year} </div>
+                    <div class="info-director">${results.Director}</div>
+                    <div class="info-ratings">
+                        Ratings:${
+                            results.Ratings.length ?
+                                results.Ratings.map(curr=>`<div>${curr.Source}: ${curr.Value}</div>`).join('')
+                                : 'No Ratings Yet'
+                        }
+                    </div>
+                </div`;
             postMessage(htmlOutput);
         };
     }
