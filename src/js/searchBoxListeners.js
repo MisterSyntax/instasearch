@@ -7,6 +7,7 @@ const searchBoxEnable = function() {
     const search = document.getElementById('search-term');
     const suggestionBox = document.getElementById('search-suggestions');
     let lastWorker;
+
     search.addEventListener('input', (e) => {
         if (lastWorker) {
             lastWorker.terminate();
@@ -20,12 +21,9 @@ const searchBoxEnable = function() {
             worker.onmessage = function (event) {
                 //save last results for refresh
 
-                //TODO: FIX THIS
-                console.log(event.data);
-                window.historyO = event.data;
-                localStorage.history = window.historyO;
+                localStorage.history = JSON.stringify({data: event.data});
 
-                displayResults(event.data)
+                displayResults({data:event.data});
             };
         }, 500);
     });

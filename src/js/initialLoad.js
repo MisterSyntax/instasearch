@@ -2,7 +2,7 @@ import displayResults from './displayResults.js';
 
 const initialLoad = function(){ 
     if(localStorage.history){
-        displayResults(localStorage.history);
+        displayResults(JSON.parse(localStorage.history));
     }
 
 }
