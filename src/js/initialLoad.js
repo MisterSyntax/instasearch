@@ -1,8 +1,8 @@
-import displayResults from './displayResults.js';
+import createSearchResults from './createSearchResults.js';
 
 const initialLoad = function(){ 
     if(localStorage.history){
-        displayResults(JSON.parse(localStorage.history));
+        createSearchResults(JSON.parse(localStorage.history));
     }
 
 }

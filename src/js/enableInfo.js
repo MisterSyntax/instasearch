@@ -7,14 +7,14 @@ import createInfo from './createInfo.js'
  * - determines the current position of the parent container and places the overlay to right unless it would go off screen
  * @var {Node} node - the node we want to enable or create the info box for
  */
-const enableInfo = function (node) {
+const enableInfoHandlers = function (node) {
 
     const imdbID = node.querySelector('.title-container').id;
 
     node.addEventListener('mouseenter', function () {
         //if we have already created the title info container show it, otherwise create it
         const titleInfoContainer = node.querySelector('.title-info-container');
-
+        
         //TODO: UPDATE FOR ALL DEVICES determine placement of info container
         if (titleInfoContainer) {
             const className = (window.innerWidth - node.offsetLeft > 600) ?
@@ -42,4 +42,4 @@ const enableInfo = function (node) {
     });
 }
 
-export default enableInfo;
+export default enableInfoHandlers;
