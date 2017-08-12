@@ -2,7 +2,6 @@
 @import './searchSuggestions.css';
 @import './searchBox.css';
 @import './colors.css';
-@import './infoOverlay.css';
 body{
     color: var(--dark-grey);
     font-weight: 700;
