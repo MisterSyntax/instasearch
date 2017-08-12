@@ -19,7 +19,7 @@
     text-align: center;
     &:hover{
         cursor:pointer;
-        box-shadow: 0 0 5pt 1pt var(--secondary);
+        box-shadow: 0 0 3pt 5pt var(--secondary);
     }
     @media (--large-viewport) {
         width: 200px;
