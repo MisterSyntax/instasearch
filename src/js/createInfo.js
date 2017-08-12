@@ -6,7 +6,6 @@
  */
 
 const createInfo = function (data, imdbID) {
-    console.log(data);
     const div = document.createElement('div');
 
     //sets the new info box to either be closed or appear on whichever side has more room
