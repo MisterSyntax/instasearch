@@ -1,16 +1,17 @@
 @import '/infoContainer.css';
 @import './searchSuggestions.css';
 @import './searchBox.css';
+@import './colors.css';
 body{
-    color: #333;
+    color: var(--dark-grey);
     font-weight: 700;
     margin: 0;
-    background-color: #F0F0F0;
+    background-color: var(--almost-white);
     font-family: 'Raleway', sans-serif;
 }
 
 header{
-    background:linear-gradient(#11EEDD,#34DDDD);
+    background:linear-gradient(var(--primary-color),var(--primary-alt));
     padding: 20px;
     display: flex;
     justify-content: center; 

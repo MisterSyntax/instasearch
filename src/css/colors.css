@@ -2,9 +2,11 @@
   /**also used for flyouts**/
   --primary-color: #11EEDD;
   --primary-alt: #34DDDD;
+  --secondary: #F0F0B0;
   --grey-blue:#f0f8ff; 
   --grey: #d0d0d0;
   --dark-grey: #333;
-  --almost-white: #D0D0D0;
+  --almost-white: #F0F0F0;
+
 
 }
