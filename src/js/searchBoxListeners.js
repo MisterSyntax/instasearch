@@ -1,4 +1,4 @@
-import enableInfo from './enableInfo'
+import displayResults from './displayResults';
 
 /**
  * @desc: Sets up eventlisteners for search box
@@ -18,14 +18,14 @@ const searchBoxEnable = function() {
             lastWorker = worker;
             worker.postMessage(e.target.value);
             worker.onmessage = function (event) {
-                suggestionBox.innerHTML = '';
-                event.data.forEach(result => {
-                    let div = document.createElement('div');
-                    div.setAttribute('class', 'result-container')
-                    div.innerHTML = result;
-                    suggestionBox.appendChild(div);
-                    enableInfo(div);
-                });
+                //save last results for refresh
+
+                //TODO: FIX THIS
+                console.log(event.data);
+                window.historyO = event.data;
+                localStorage.history = window.historyO;
+
+                displayResults(event.data)
             };
         }, 500);
     });

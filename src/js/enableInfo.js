@@ -9,10 +9,6 @@ const enableInfo = function (node) {
     const imdbID = node.querySelector('.title-container').id;
 
     node.addEventListener('mouseenter', function () {
-        
-        //TODO: REMOVE THIS close any open info containers
- /**       document.querySelectorAll('.open').forEach(node => { node.setAttribute("class", "title-info-container closed") });**/
-
         //if we have already created the title info container show it, otherwise create it
         const titleInfoContainer = node.querySelector('.title-info-container');
 
@@ -32,8 +28,10 @@ const enableInfo = function (node) {
              */
             const worker = new Worker('./webWorkers/requestInfo.js');
             worker.postMessage(imdbID);
+
             worker.onmessage = function (event) {
                 const div = document.createElement('div');
+
                 //sets the new info box to either be closed or appear on whichever side has more room
                 const className = document.querySelectorAll('.open').length > 0 ? 
                     'title-info-container closed'
