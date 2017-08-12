@@ -1,4 +1,4 @@
-import enableInfoHandlers from './enableInfo';
+import enableInfoHandlers from './enableInfoHandlers';
 /**
  * @description: Takes an object which contains the data of the suggestions and displays them
  * - Also calls enableInfo on each result to 
