@@ -10,9 +10,15 @@
 .title-info-container{
     position: absolute;
     height: 370px;
-    width: 280px;
+    width: 260px;
     top: 0;
     z-index: 2;
+    padding: 1em;
+    font-weight: 500;
+}
+
+.info-year-director{
+    text-align: center;
 }
 
 .title-info{
@@ -32,4 +38,9 @@
 .right{
     left:100%;
     
+}
+
+.info-title{
+    font-weight: bold;
+    text-align: center;
 }

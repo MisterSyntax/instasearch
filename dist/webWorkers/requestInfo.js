@@ -17,10 +17,9 @@ onmessage = function (e) {
             let htmlOutput = `
                 <div class="title-info">
                     <div class="info-title">${results.Title}</div>
-                    <div class="info-year">${results.Year} </div>
-                    <div class="info-director">${results.Director}</div>
+                    <div class="info-year-director"><span class="year">(${results.Year})</span> <span class="director">${results.Director}</span></div>
                     <div class="info-ratings">
-                        Ratings:${
+                        <h4>Ratings:</h4>${
                             results.Ratings.length ?
                                 results.Ratings.map(curr=>`<div>${curr.Source}: ${curr.Value}</div>`).join('')
                                 : 'No Ratings Yet'

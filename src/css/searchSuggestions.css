@@ -21,6 +21,13 @@
         cursor:pointer;
         box-shadow: 0 0 3pt 5pt var(--secondary);
     }
+    @media (--small-viewport) {
+        max-height: 80vh;
+    }
+    @media (--medium-viewport) {
+        max-height: 80vh;
+        max-width: 200px;
+    }
     @media (--large-viewport) {
         width: 200px;
     }
@@ -28,7 +35,19 @@
         width: 240px;
     }
 }
+.title-container{
+    height: 100%;
+    width: 100%;
+}
 .poster{
+    @media (--small-viewport) {
+        max-width: 90%; 
+
+    }
+    @media (--medium-viewport) {
+        max-width: 90%;
+        max-height: 80%;
+    }
     @media (--large-viewport) {
         width: 180px;
         height: 285px;
