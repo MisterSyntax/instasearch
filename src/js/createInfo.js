@@ -24,10 +24,12 @@ const createInfo = function (data, imdbID, parent) {
 
     //set up handlers for closing info box
     const closeButton = parent.querySelector('.close-info');
-    closeButton.addEventListener('click', function () {
+    window.closeButton = closeButton;
+    closeButton.addEventListener('click', function (event) {
         const titleInfoContainer = parent.querySelector('.title-info-container');
         titleInfoContainer.setAttribute('class', 'title-info-container closed');
-        
+        event.stopPropagation();
+        parent.blur();
     });
 }
 

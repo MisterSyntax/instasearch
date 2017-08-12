@@ -34,16 +34,24 @@ const enableInfoHandlers = function (node) {
         }
     }
 
-    node.addEventListener('mouseenter', createOpenInfoBox);
-    node.addEventListener('click', function(each){
-        e.stopPropogation();
-        createOpenInfoBox();
+    node.addEventListener('mouseenter', function () {
+        if (window.innerWidth > 639) {
+            createOpenInfoBox()
+        }
     });
+    node.addEventListener('click', function () {
+        if (window.innerWidth < 639) {
+            createOpenInfoBox();
+        }
+    });
+
     //Closes the container on mouseleave
     node.addEventListener('mouseleave', function () {
-        const titleInfoContainer = node.querySelector('.title-info-container');
-        if (titleInfoContainer) {
-            titleInfoContainer.setAttribute('class', 'title-info-container closed');
+        if (window.innerWidth > 639) {
+            const titleInfoContainer = node.querySelector('.title-info-container');
+            if (titleInfoContainer) {
+                titleInfoContainer.setAttribute('class', 'title-info-container closed');
+            }
         }
     });
 
