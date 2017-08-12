@@ -34,9 +34,13 @@
      * @desc: Sets up info on hover or click for each suggestion
      */
     function enableInfo(node) {
-        window.curr = node;
+        
         const imdbID = node.querySelector('.title-container').id;
         node.addEventListener('mouseenter', function () {
+            window.curr = node;
+            //close any open info containers
+            document.querySelectorAll('.open').forEach(node=>{node.setAttribute("class","title-info-container closed")});    
+
             //if we have already created the title info container show it, otherwise create it
             const titleInfoContainer = node.querySelector('.title-info-container')
             if (titleInfoContainer) {
@@ -49,7 +53,6 @@
                     let div = document.createElement('div');
                     div.setAttribute('class', 'title-info-container open')
                     div.setAttribute('id', `info-${imdbID}`)
-                    console.log(event.data);
                     div.innerHTML = event.data;
                     node.appendChild(div);
                 }
