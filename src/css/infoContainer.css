@@ -1,11 +1,4 @@
 @import './colors.css';
-.open{
-    display: block;
-}
-
-.closed{
-    display: none;
-}
 
 .title-info-container{
     position: absolute;
@@ -32,15 +25,25 @@
     text-align: left;
 }
 
+
+.info-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.open{
+    display: block;
+}
+
+.closed{
+    display: none;
+}
+
 .left{
     right:100%;
 }
 .right{
     left:100%;
     
-}
-
-.info-title{
-    font-weight: bold;
-    text-align: center;
 }
