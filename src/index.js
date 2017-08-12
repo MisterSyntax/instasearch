@@ -1,5 +1,3 @@
-import './main.css'
-
 (function () {
     /**
      * @desc: Sets up eventlisteners for search box
@@ -51,6 +49,7 @@ import './main.css'
                     let div = document.createElement('div');
                     div.setAttribute('class', 'title-info-container open')
                     div.setAttribute('id', `info-${imdbID}`)
+                    console.log(event.data);
                     div.innerHTML = event.data;
                     node.appendChild(div);
                 }
@@ -61,7 +60,6 @@ import './main.css'
             if (titleInfoContainer) {
                 titleInfoContainer.setAttribute('class', 'title-info-container closed');
             }
-
         })
     }
 

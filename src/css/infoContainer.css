@@ -1,0 +1,17 @@
+.open{
+    display: block;
+}
+
+.closed{
+    display: none;
+}
+
+.title-info-container{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: aliceblue;
+}

@@ -1,3 +1,5 @@
+@import './css/infoContainer.css';
+@import './css/searchSuggestions.css';
 body{
     color: #333;
     font-weight: 700;
@@ -9,40 +11,11 @@ header{
     background:linear-gradient(#11EEDD,#34DDDD);
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 main{
     width: 100%;
+    font-size:100px;
 }
-#search-suggestions{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-}
-#search-term{
-    font-size: 20px;
-    border-radius: 5px;
-    border: 0px;
-    padding: .5em;
-    min-width: 300px;
-}
-.result-container{
-    max-width: 320px;
-    padding: .5em;
-    background-color: #D0D0D0;
-    margin: .5em;
-    border-radius: 3px;
-    text-align: center;
-}
-.poster{
-    width: 300px;
-}
-.no-poster{
-    width: 300px;
-    height: 400px;
-    background-color: white;
-    text-align: center; 
-}
+
+

@@ -14,19 +14,13 @@ onmessage = function (e) {
         xmlHttp.send();
         const results = JSON.parse(xmlHttp.responseText);
         if (results.Response === 'True') {
-            let htmlOutput = results.Search.map(result => {
-
-                let info = `
+            let htmlOutput = `
                 Movie Title
                 Year
                 Director
                 Rating`
-
-                return info;
-            });
-
             postMessage(htmlOutput);
-        }
+        };
     }
     close();
 };
