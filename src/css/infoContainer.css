@@ -44,10 +44,10 @@
 }
 
 .left{
-    right:100%;
+    right:10%;
 }
 .right{
-    left:100%;
+    left:10%;
 }
 
 /**the close option will only exist for mobile**/
